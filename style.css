@@ -1,0 +1,232 @@
+
+body {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    /* height: 100vh; */
+   background-image: url(/frontend/img.jpeg);
+   background-repeat: no-repeat;
+   background-size: cover;
+    
+    
+}
+
+:placeholder-shown{
+    font-size: medium;
+    font-style: italic;
+}
+
+/* Animation for background gradient color
+@keyframes bgColorChange {
+    0% {
+        background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    }
+    50% {
+        background: linear-gradient(135deg, #42e695, #3bb2b8);
+    }
+    100% {
+        background: linear-gradient(135deg, #ff8a00, #da1b60);
+    }
+} */
+/* online exam
+#online{
+
+    display: inline-block;
+} */
+
+
+
+#registration-container{
+    background: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Border illusion with transparency */
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    backdrop-filter: blur(10px); /* Glass effect */
+    color: #fff;
+    animation: fadeIn 1.5s ease-in-out;
+    width: 800px;
+    color: rgb(15, 15, 15);
+    padding: 0 30px;
+    display: grid;
+    gap: 20px;
+    padding-bottom: 30px;
+    margin-top: 10px;
+}
+#registration-form{
+    
+    padding: 20px;
+    margin-top: 15px;
+    
+}
+
+
+.btn{
+
+    padding: 10px;
+    background: linear-gradient(120deg, #5e0433d4, #e6ebf4, #5e0433d4);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+.btn:hover{
+    background: linear-gradient(120deg, #04545e92, #e6ebf4,#04545e92);
+    transform: scale(1.25);
+}
+
+/* Exam container styling */
+#time{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+timer{
+    font-size:large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#exam-container {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: #333;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #4d2304;
+    text-shadow: 1px 1px 8px rgba(78, 84, 200, 0.8);
+    margin-bottom: 20px;
+    animation: fadeInScale 1.5s ease-in-out;
+}
+
+h2{
+    font-size: 2em;
+    color: #de14bdca;
+    text-shadow: 1px 1px 8px rgba(145, 65, 241, 0.8);
+    /* color: #45352a;
+    text-shadow: 1px 1px 8px rgba(253, 253, 253, 0.8); */
+}
+
+#questions-container {
+    margin-bottom: 20px;
+}
+
+
+.question {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.question:hover {
+    transform: scale(1.02);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.question label {
+    display: flex; 
+    align-items: center; 
+    
+    margin-bottom: 8px; 
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+#submit-btn {
+    width: 35%;
+    padding: 12px;
+    font-size: 1.1em;
+    color: #fff;
+    background: linear-gradient(135deg, #ec39a7, #a216da);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+#submit-btn:hover {
+    background: linear-gradient(135deg, #2bffe3, #4187ff);
+    transform: scale(1.05);
+}
+
+
+#result {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4e54c8;
+    text-align: center;
+    margin-top: 15px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+
+#timer {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #ff4b2b;
+    margin-top: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+label{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+}
+input[type='text']{
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+}
+input[type='email']{
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+}
